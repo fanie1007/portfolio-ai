@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<title>AI 設計作品分析網站</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+<h1>AI 設計作品分析平台</h1>
+<p>Visual Design Student Project</p>
+</header>
+
+<section class="upload">
+<h2>上傳你的設計作品</h2>
+<input type="file" id="imageUpload">
+<button onclick="analyzeDesign()">開始分析</button>
+</section>
+
+<section class="result">
+<h2>AI 分析結果</h2>
+
+<div class="card">
+<h3>色彩分析</h3>
+<p id="colorResult">尚未分析</p>
+</div>
+
+<div class="card">
+<h3>排版分析</h3>
+<p id="layoutResult">尚未分析</p>
+</div>
+
+<div class="card">
+<h3>設計評分</h3>
+<p id="scoreResult">0 / 100</p>
+</div>
+
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
